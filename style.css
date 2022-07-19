@@ -7,50 +7,122 @@ body{
       background-color:#f3f1ff;
 }
 
-/* common style */
+/* landing section style */
 
 main{
-      display: flex;
-       flex-direction: column;    
-     align-items: center;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
 
 }
 .container{
-      background-color: #ffff;
-      width: 870px;
-      border-radius: 10px;
-      padding: 30px;
-      margin-top: 21px;
+    background-color: #1f1f1f;
+    width: 1321px;
+    height: 646px;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+}
+
+.container>div {
+    width: 50%;
+}
+div.landing-description{
+    width: 80%;
+    word-wrap: break-word;
+    color: #ffffff;
+    margin-top: 111px;
+    margin-left: 111px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.desc{
+    font-size: 16px;
+    line-height: 26px;
 }
 
 
+.title{
+
+    font-size: 70px;
+    line-height: 80px;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+
+}
+.landing-half-photo img {
+    width: 581px;
+    height: 613px;
+}
+.btn-div{
+    margin-top: 15px;
+}
+
+.btn{
+    background: #DD0000;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: white;
+
+}
+
+span{
+    margin-left: 10px;
+}
 
    /************************
     landing-conatiner section style
     ************************/
 
-hr{
-      border: 1px solid #D1D1D1;
-      margin-bottom: 30px;
-      
-}
 
-.landing-conatiner{
-    display: flex;
-}
 
-.landing-half{
-    width: 50%;
-}
+
 
 
 
 
     /************************
-        live   section style
+        Footer   section style
     ************************/
+ footer{
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+        color: white;
+ }
+.footer-title{
 
+    text-align: center;
+    
+}
 
+.footer-title>h2{
+    font-size: 30px;
+    margin-top: 130px;
+}
+ hr{
+    width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+ }
+
+ .footer-list>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 130px;
+ }
+
+  .footer-list ul>li{
+  list-style: none;
+  margin-right: 20px;
+    
+ }
 
 @media only screen and (max-width:668px)  {
   
