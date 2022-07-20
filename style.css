@@ -64,6 +64,7 @@ section{
  .button>a>p{
     margin-left: 5px;
  }
+ 
  /* button animation  */
 
 @keyframes sliding {
@@ -157,9 +158,21 @@ section{
 .transfer-details h3{
     font-size: 18px;
 }
+.btn-div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 #visible{
     text-align: center;
     visibility:hidden;
+    background-color: #DD0000;
+    width: 50%;
+    padding: 10px 20px;
+    margin-left: 50%;
+      color: white;
+
 }
 /************************ Footer section style ************************/
 footer{
@@ -193,12 +206,6 @@ hr{
    color: white;
 }
 
-#visible{
-visibility: hidden;  
-  justify-content: center;
-    margin-left: 15%;
-    margin-bottom: 30px;
-}
 
 
 /************************ fixture section style ************************/
@@ -342,11 +349,21 @@ visibility: hidden;
     #last-blog{
         display: none;
    }
-       #visible{
-   visibility: visible;
-       margin-left: 10px;
-
+     
+#visible{
+    visibility:visible;
+    background-color: #DD0000;
+    width: 50%;
+    padding: 10px 10px;
+    margin-left: 20%;
+    border-radius: 10px;
+      color: white;
 }
+  .btn-div{
+    color: white;
+    font-size: 1.5rem;
+  }
+
    /* Foter */
     .footer{
         width: 100%;
