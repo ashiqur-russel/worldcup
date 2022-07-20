@@ -174,18 +174,26 @@ hr{
     border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
- .footer-list>ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 130px;
-    }
 
 .footer-list ul>li{
     list-style: none;
     margin-right: 20px;  
     }
+   
+    .footer-list{
+        display: flex;
+        justify-content: center;
+    }
+ .list{
+  
+   text-align: center;
+    width: 45%;
+    }
 
+    .list>a{
+        margin: 20px;
+        align-items: center;
+    }
 
     #visible{
         display: none;
