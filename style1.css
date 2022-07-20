@@ -4,6 +4,11 @@
       padding: 0;
 }
 
+body{
+            background-color: #ffffff;
+
+}
+
 section{
          margin: 30px 100px;
 }
@@ -16,6 +21,7 @@ section{
    
       background-color: black;
       color: aliceblue;
+      border-radius: 30px;
 
 }
 
@@ -50,23 +56,73 @@ span{
     margin-left: 10px;
 }
 
-/* --------- */
+  /************************
+    transfer-list-conatiner section style
+    ************************/
 
 .transfer{
      display: grid;
      grid-template-columns: 300px 1021px;
      grid-template-rows: 200px 800px;
      column-gap: 2rem;
+  
 
 }
 
 .button{
-      background-color: black;
+    background-color: #161616;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-group{
+      height: 100%;
+      display: grid;
+      padding: 20px 40px;
+      row-gap: 10px;
+     
+}
+
+.btn-common{
+border: none;
+    border-radius: 10px;
+  
+}
+.active{
+    background-color: #DD0000;
 }
 
 .transfer-blogs{
       display: grid;
       grid-template-columns: repeat(3,1fr);
+      row-gap: 30px;
+}
+
+.blog{
+   
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      border-radius: 5px;  
+}
+.blog-img{
+      text-align: center;
+}
+
+.transfer-desc{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.transfer-details h3{
+    font-size: 18px;
+}
+
+
+#visible{
+      text-align: center;
+      visibility:hidden;
 }
 
 /* -------------- */
@@ -117,7 +173,40 @@ div.desc{
 .landing-container img {
  width: 100%;
 }
+
+/* second section */
+
   .transfer{
-      display: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
   }
+
+  .transfer-blogs{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      row-gap: 30px;
+}
+
+.button{
+            background-color: #ffffff;
+
+}
+
+.btn-group{
+     display: grid;
+     width: 50%;
+     justify-content: center;
+     margin-left: 120px;
+     
+}
+
+.btn-common{
+border: none;
+    border-radius: 10px;
+          padding: 20px ;
+
+  
+}
+
 }
