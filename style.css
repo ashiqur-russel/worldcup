@@ -1,9 +1,23 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+        color: black;
+        cursor: pointer;
+
+
 }
 body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
 }
 section{
@@ -17,6 +31,7 @@ section{
     background-color: black;
     color: aliceblue;
     border-radius: 30px;
+    height: 500px;
 }
 .container>div{
     width: 50%;
@@ -24,10 +39,15 @@ section{
 .landing-description{
     width: 80%;
     padding: 30px;
+    margin-left: 5vw;
 }
 .title{
     font-size: 3.25vw;
-    line-height: 70px;
+    line-height: 50px;
+}
+
+.landing-description>p{
+    line-height: 1.5rem;
 }
 .btn-div{
     margin-top: 35px;
@@ -37,6 +57,13 @@ section{
     border-radius: 5px;
     padding: 15px 25px;
     color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
 }
 span{
     margin-left: 10px;
@@ -168,17 +195,54 @@ visibility: hidden;
     margin-left: 15%;
     margin-bottom: 30px;
 }
-/* Media query */
+
+
+/************************ fixture section style ************************/
+.fixt{
+    display: grid;
+  /*   grid-template-columns: 200px auto;
+    
+    column-gap: 5px;
+    grid-row-gap: 0;
+    background-color: red; */
+
+  
+    grid-template-columns: 200px auto;
+    grid-template-rows: 200px 100px;
+         column-gap: 4rem;
+
+
+}
+.fixtures{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 4rem;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.fix{
+    height: 10rem;
+    width:auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    align-items: center;
+}
+.fix-desc{
+    padding: 10px;
+}
+
+/* ****************** Media query ************************** */
 @media only screen and (max-width: 600px) {
     section{
-        margin: 20px 10px;
+    margin: 20px 10px;
    }
     .container{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        flex-direction: column;
-        border-radius: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    border-radius: 5px;
    }
     .container>div{
         width: 80%;
